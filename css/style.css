@@ -1,0 +1,126 @@
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-large: 100px;
+  --font-medium: 50px;
+  --font-regular: 30px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  top: 50%;
+}
+
+#bgImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  min-width: 1880px;
+  max-height: 1400px;
+  min-height: 1200px;
+  z-index: -5;
+  filter: brightness(90%);
+}
+
+.clock {
+  margin-top: 150px;
+  margin-bottom: 0;
+  font-size: var(--font-large);
+  color: var(--color-white);
+}
+
+.login-form {
+  margin-top: 30px;
+}
+
+.login-form > input {
+  font-size: var(--font-regular);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-white);
+  outline: none;
+  color: var(--color-white);
+}
+
+.login-form > input::placeholder {
+  color: var(--color-white);
+}
+
+.login-form > button {
+  padding: 3px;
+  vertical-align: 2px;
+  margin-left: 10px;
+  border: none;
+  border: 2px solid var(--color-white);
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: var(--font-small);
+  cursor: pointer;
+}
+
+.login-form > button:hover {
+  background-color: var(--color-white);
+  color: black;
+}
+
+.greeting {
+  font-size: var(--font-medium);
+  color: var(--color-white);
+}
+
+.todo-form > input {
+  text-align: center;
+  font-size: var(--font-small);
+  border: none;
+  border-bottom: 2px solid var(--color-white);
+  color: var(--color-white);
+  background-color: transparent;
+  outline: none;
+}
+
+.todo-form > input::placeholder {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.todo-form > button:hover {
+  background-color: var(--color-white);
+  color: black;
+}
+
+.todo-list {
+  list-style: none;
+  color: var(--color-white);
+}
+
+.quote {
+  margin-bottom: 30px;
+}
+
+.quote > span {
+  color: var(--color-white);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Momentum App</title>
+</head>
+<body>
+  <!-- clock.js와 연결되는 마크업 -->
+  <h2 class="clock">00:00:00</h2>
+
+  <!-- login.js와 연결되는 마크업 -->
+  <form class="login-form">
+    <input required maxlength="15" type="text" placeholder="당신의 이름은 무엇인가요?" />
+    <button>Log In</button>
+  </form>
+  <h1 class="greeting"></h1>
+
+  
+  <!-- quote.js와 연결되는 마크업 -->
+  <div class="quote">
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- todo.js와 연결되는 마크업 -->
+  <form class="todo-form">
+    <!-- required를 넣어서 input을 필수로 작성하게 한다. -->
+    <input type="text" placeholder="할일을 적어주세요!" required />
+  </form>
+  <ul class="todo-list"></ul>
+
+  <script src="js/login.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <!-- background.js는 JS에서 const bgImage = document.createElement('img')로 img태그를 만들었다. -->
+  <script src="js/background.js"></script> 
+  <script src="js/todo.js"></script>
+</body>
+</html>
